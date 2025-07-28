@@ -1,0 +1,14 @@
+// Глобальные стили
+@use "global/normalize";
+@use "global/fonts";
+@use "global/variables" as *;
+@use "global/mixins" as *;
+@use "global/base";
+
+// Блоки
+@use "blocks/icons";
+@use "blocks/page-header";
+@use "blocks/aside";
+@use "blocks/main";
+@use "blocks/slider";
+@use "blocks/swiper";

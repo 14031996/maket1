@@ -1,0 +1,21 @@
+@use "../global/variables" as *;
+
+.round-icon {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  &--burger { background-image: url("/images/burger.svg"); }
+  &--repair { background-image: url("/images/repair.svg"); }
+  &--checkstatus { background-image: url("/images/checkstatus.svg"); }
+  &--menu { background-image: url("/images/menu.svg"); }
+  &--search { background-image: url("/images/search.svg"); }
+  &--call { background-image: url("/images/call.svg"); }
+  &--chat { background-image: url("/images/chat.svg"); }
+  &--profile { background-image: url("/images/profile.svg"); }
+}
