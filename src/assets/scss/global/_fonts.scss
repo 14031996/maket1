@@ -1,37 +1,22 @@
-$font-path: '../fonts/' !default;
+@use "../global/variables" as *;
 
 @font-face {
-  font-family: 'TT Lakes';
-  src: url('#{$font-path}TTLakes-Bold.eot');
-  src: local('TT Lakes Bold'), local('TTLakes-Bold'),
-    url('#{$font-path}TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-    url('#{$font-path}TTLakes-Bold.woff') format('woff'),
-    url('#{$font-path}TTLakes-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; /* Добавлено для оптимизации загрузки */
-}
-
-@font-face {
-  font-family: 'TT Lakes';
-  src: url('#{$font-path}TTLakes-Regular.eot');
-  src: local('TT Lakes Regular'), local('TTLakes-Regular'),
-    url('#{$font-path}TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-    url('#{$font-path}TTLakes-Regular.woff') format('woff'),
-    url('#{$font-path}TTLakes-Regular.ttf') format('truetype');
+  font-family: $ff-regular;
+  src: url("/fonts/TTLakes-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
-  font-family: 'TT Lakes';
-  src: url('#{$font-path}TTLakes-DemiBold.eot');
-  src: local('TT Lakes DemiBold'), local('TTLakes-DemiBold'),
-    url('#{$font-path}TTLakes-DemiBold.eot?#iefix') format('embedded-opentype'),
-    url('#{$font-path}TTLakes-DemiBold.woff') format('woff'),
-    url('#{$font-path}TTLakes-DemiBold.ttf') format('truetype');
-  font-weight: 600;
+  font-family: $ff-medium;
+  src: url("/fonts/TTLakes-Medium.ttf") format("truetype");
   font-style: normal;
-  font-display: swap;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: $ff-bold;
+  src: url("/fonts/TTLakes-Bold.ttf") format("truetype");
+  font-style: bold;
+  font-weight: normal;
 }

@@ -1,5 +1,5 @@
 import "./assets/scss/style.scss"
-import "../index.css"
+// import "../../style.css"
 
 const swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
@@ -14,9 +14,7 @@ const swiper = new Swiper(".swiper", {
 });
 
 const showMoreBtn = document.querySelector(".slider-text");
-const hiddenBrands = document.querySelectorAll(
-  ".slider-brands--unvisible-laptop"
-);
+const hiddenBrands = document.querySelectorAll(".slider-brands--unvisible-laptop");
 
 showMoreBtn.addEventListener("click", function () {
   hiddenBrands.forEach((brand) => {

@@ -1,0 +1,21 @@
+@use "../global/variables" as *;
+@use "../global/base" as *;
+
+
+.slider-title {
+    background: linear-gradient(90deg, $color-bg 1.39%, $color-white 100%);
+    margin: 0;
+    border-top: 1px solid $color-shadow;
+    
+    &__h2 {
+        font-family: $ff-regular, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+        color: $color-light-text;
+        padding: 20px;
+        margin: 0;
+    }
+}

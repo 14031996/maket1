@@ -1,39 +1,18 @@
 @use "../global/variables" as *;
+@use "../global/base" as *;
 
-.main {
+.main{
   background-color: $color-bg;
   box-sizing: border-box;
 
-  &-header {
-    &__h1 {
-      font-size: 28px;
-      font-weight: bold;
-      line-height: 40px;
-      letter-spacing: -0.6px;
-      padding: 15px;
-      margin: 0;
-      position: relative;
-
-      &::before {
-        content: " ";
-        position: absolute;
-        left: -1px;
-        width: 5px;
-        height: 40px;
-        background-color: $color-primary;
-        border-radius: 30%;
-      }
-    }
-
-    &__icons {
-      display: none;
-    }
+  @media (min-width: $screen-lg){
+    margin-left: 320px;
   }
-
-  &__nav {
+  
+  &__nav{
     margin-bottom: 10px;
   }
-
+  
   &__scroll-menu {
     display: flex;
     justify-content: space-between;
@@ -42,117 +21,102 @@
     gap: 15px;
     padding: 15px; 
     margin: 0; 
-    height: 70px;
     overflow-x: scroll;
     scrollbar-width: none;
 
-    &-link {
-      text-decoration: none;
-      color: $color-light-text;
-      padding: 10px;
-      border: 2px solid transparent;
+    @media (min-width: $screen-lg) {
+      flex-wrap: wrap;
+      overflow-x: clip;
+      margin: 0;
+    }
+  }
 
-      &:hover {
-        border: 2px solid $color-primary;
-        border-radius: 5px;
-        background-color: white;
-      }
-
+  &__scroll-menu-link {
+    text-decoration: none;
+    color: $color-light-text;
+    padding: 10px;
+    border: 2px solid $color-transparent;
+    
+    &:hover{
+      border: 2px solid $color-primary;
+      border-radius: 5px;
+      background-color: $color-white;
+    }
+    
+    @media(min-width: $screen-md){
       &_desktop {
         display: none;
       }
     }
   }
+}
 
-  &__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    margin: 0 15px;
+.main__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin: 0 15px;
+  
+  &-content{
+    height: 100px;
+    overflow: hidden;
 
-    &-content {
-      height: 100px;
+    @media(min-width: $screen-md) {
+      height: 140px;
       overflow: hidden;
     }
-  }
 
-  &__text-more {
+    @media (min-width: $screen-lg){
+      height: 160px;
+      overflow: hidden;
+      padding-left: 5px;
+    }
+  }
+  
+  &-more {
     border: none;
-    background-color: transparent;
+    background-color: $color-transparent;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
     padding: 10px;
 
-    &::before {
-      content: url("img/icon.svg");
+    @media (min-width: $screen-lg){
+      display: block;
+      margin: 10px;
+    }
+    
+    &:before {
+      content: url("/public/images/icon.svg");
       display: inline-block;
       padding-right: 15px;
       vertical-align: middle;
     }
   }
+}
 
-  &__image { 
-    width: 100%;
-  }
+.main__image { 
+  width: 100%;
 
-  @media (min-width: $screen-md) and (max-width: $screen-lg) {
-    &__container { 
-      display: flex;
-    }
+  @media(min-width: $screen-md) {
+    max-width: 360px;
+    max-height: 208px;
+    margin: 15px 25px 10px 30px;
+    border-radius: 2%;
 
-    &__text-content {
-      height: 140px;
-    }
-
-    &__image {
-      max-width: 360px;
-      max-height: 208px;
-      margin: 15px 25px 10px 30px;
-      border-radius: 2%;
-    }
-  }
-
-  @media (min-width: $screen-lg) {
-    margin-left: 320px;
-
-    &-header {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 15px;
-
-      &__icons {
-        display: flex;
-        align-items: center;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-      }
-    }
-
-    &__scroll-menu {
-      flex-wrap: wrap;
-      overflow-x: clip;
-      margin: 0;
-    }
-
-    &__container { 
-      display: flex;
-    }
-
-    &__text-content {
-      height: 160px;
-      padding-left: 5px;
-    }
-
-    &__image {
+    @media (min-width: $screen-lg){
       max-width: 535px;
-      max-height: 385px;
+      max-height: 385px ;
       margin: 0 20px 0 30px;
       border-radius: 1%;
     }
   }
+}
+
+@media(min-width: $screen-md) {
+.main__container{ 
+    display: flex;
+}
 }

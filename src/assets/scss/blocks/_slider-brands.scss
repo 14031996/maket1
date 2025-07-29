@@ -1,0 +1,37 @@
+@use "../global/variables" as *;
+@use "../global/base" as *;
+
+.slider-brands{
+  width: 224px;
+  height: 72px;
+  
+  @media (min-width: $screen-lg) {
+    width: 240px;
+    height: 72px;
+  }
+  
+  &:hover{
+    outline: 2px solid $color-primary;
+    border-radius: 3%;
+    
+    @media (min-width: $screen-lg) {
+      outline: 2px solid $color-primary;
+      border-radius: 4%;
+    }
+  }
+  
+  &--unvisible-laptop{
+    display: none;
+  }
+  
+  &--img {
+    width: 224px;
+    height: 72px;
+
+    @media (min-width: $screen-lg) {
+      width: 240px;
+      height: 72px;
+    }
+  }
+}
+  

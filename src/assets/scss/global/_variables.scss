@@ -1,11 +1,21 @@
-$color-primary: #41F6D7;
+// Цвета
+$color-bg: #F8F8F8 ;
 $color-border: #EAEAEA;
+$color-primary: #41F6D7;
 $color-text: #1B1C21;
 $color-light-text: #7E7E82;
-$color-bg: #F8F8F8;
+$color-shadow:#d9fff5;
+$color-white: white;
+$color-transparent: transparent;
+$color-pg: #dddddd;
+$color-pg-active: #b5b6bc;
 
-$font-size-base: 16px;
-$line-height-base: 1.5;
+// Шрифт
+$ff-regular: "TT Lakes Regular";
+$ff-medium: "TT Lakes Medium";
+$ff-bold: "TT Lakes Bold";
 
+// media
 $screen-md: 768px;
 $screen-lg: 1440px;
+

@@ -1,0 +1,22 @@
+@use "../global/variables" as *;
+@use "../global/base" as *;
+
+.slider-container{
+    max-width: 1440px;
+    min-width: 320px;
+    margin: 0 auto;
+
+    &__mobile-hidden{
+        width: 100%; 
+        max-width: 1200px; 
+        overflow: hidden;
+
+        @media(min-width: $screen-md) {
+            display: none;
+        }
+
+         @media(min-width: $screen-lg) {
+            display: none;
+        }
+    }
+}

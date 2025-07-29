@@ -1,0 +1,39 @@
+@use "../global/variables" as *;
+@use "../global/base" as *;
+
+.aside-footer{
+    margin-top: auto;
+
+    &__icons{
+        display: flex;
+        padding: 15px;
+        gap: 15px ;
+    }
+
+    &__content-email{
+        padding-left: 15px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+    }
+
+    &__content-phone{
+        padding-left: 15px;
+        font-family: $ff-regular, Arial, sans-serif;
+        // font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+    }
+
+    &__content-lang{
+        display: flex;
+        padding: 15px;
+        gap: 15px;
+        
+        &_active{
+            color:$color-light-text;
+        }
+    }
+}

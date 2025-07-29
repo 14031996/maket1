@@ -9,6 +9,14 @@
 @use "blocks/icons";
 @use "blocks/page-header";
 @use "blocks/aside";
+@use "blocks/aside-overlay";
+@use "blocks/aside-header";
+@use "blocks/aside-footer";
 @use "blocks/main";
-@use "blocks/slider";
+@use "blocks/main-header";
+@use "blocks/sliders";
+@use "blocks/slider-container";
+@use "blocks/slider-title";
+@use "blocks/slider-brands";
+@use "blocks/slider-text";
 @use "blocks/swiper";

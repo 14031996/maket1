@@ -1,74 +1,69 @@
+@use "../global/variables" as *;
+@use "../global/base" as *;
+
 .page-header {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   gap: 40px;
-   padding: 15px;
-   background-color: white;
-   border-bottom: 1px solid #D9FFF5;
-
-   &__left-section {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 15px;
-   }
-
-   &__right-section{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    position: relative;
-    
-    &::before {
-    content: "";
-    left: -20px;
-    top: 5px;
-    position: absolute;
-    width: 2px;
-    height: 32px;
-    background-color: #EAEAEA;
-    }
-   }
-
-   &__mobile-hidden {
-    display: none; 
-}
-}
-
-
-   @media(min-width:768px)  and
-    (max-width: 1439px) {
-.page-header__left-section{
-    position: relative;
     gap: 40px;
-    flex-grow: 1;
+    padding: 15px;
+    background-color: $color-white;
+    border-bottom: 1px solid $color-shadow;
 
-    &::after{
-    content: "";
-    left: 60px;
-    top: 12px;
-    position: absolute;
-    width: 2px;
-    height: 32px;
-    background-color: #EAEAEA;
+    @media (min-width: $screen-lg) {
+        display: none;
     }
-  }
-
-.page-header__mobile-hidden{
-    display: flex;
-    gap: 15px;
-   }
+    
+    &__left-section{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        
+        @media(min-width: $screen-md) {
+            position: relative;
+            gap: 40px;
+            flex-grow: 1;
+            
+            &:after{
+                content: "";
+                left: 60px;
+                top: 12px;
+                position: absolute;
+                width: 2px;
+                height: 32px;
+                background-color: $color-border;
+            }
+        }
+    }
+    
+    &__mobile-hidden {
+        display: none; 
+        
+        @media(min-width: $screen-md) {
+            display: flex;
+            gap: 15px;
+        }
+    }
+    
+    &__right-section{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        position: relative;
+        
+        &:before {
+            content: "";
+            left: -20px;
+            top: 5px;
+            position: absolute;
+            width: 2px;
+            height: 32px;
+            background-color: $color-border;
+        }
+    }
 }
-
- @media (min-width:1440px){
-.page-header  {
-    display: none; 
-}
- }
 
 .page-header__logo {
     width: 100px;
     height: 55px;
-    margin-right: auto;
 } 
-
