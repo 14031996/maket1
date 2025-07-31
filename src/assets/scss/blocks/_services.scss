@@ -1,0 +1,83 @@
+@use "../global/variables" as *;
+@use "../global/base" as *;
+
+.services {
+    display: none;
+
+    @media(min-width: $screen-md) {
+        display: block;
+        min-width: 720px;
+        height: 469px;
+        margin: 0 auto;
+        background: $color-white;
+        overflow: hidden;
+        color:$color-light-text;
+    }
+
+    @media(min-width: $screen-lg) {
+        display: block;
+        max-width: 1056px;
+        margin: 0 auto;
+        background: $color-white;
+        border-radius: 10px;
+        overflow: hidden;
+        color:$color-light-text;
+
+    
+    }
+    
+    &__header {
+        display: flex;
+        background: #F8F8F8;;
+        font-weight: bold;
+        padding:20px;
+        font-family:$ff-medium;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0px; 
+    
+    }
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 25px;
+        margin: 0;
+        border-radius: 0;
+        color:$color-text;
+        font-family: $ff-regular;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        position: relative;
+        
+        &:after{
+            content: "";
+            top: 70px;
+            position: absolute;
+            width: 1008px;
+            height: 1px;
+            background-color: $color-border;
+        
+        }
+        
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+.services__header-name{ 
+    flex: 3; 
+}
+.services__header-price { 
+    flex: 1; 
+}
+.services__header-time { 
+    flex: 1; 
+}
+.services__header-order { 
+    flex: 1;
+    text-align: right;
+}
+          

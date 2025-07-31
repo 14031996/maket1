@@ -2,12 +2,12 @@
 @use "../global/base" as *;
 
 .slider-brands{
-  width: 224px;
-  height: 72px;
+  min-width: 224px;
+  min-height: 72px;
   
   @media (min-width: $screen-lg) {
-    width: 240px;
-    height: 72px;
+    min-width: 240px;
+    min-height: 72px;
   }
   
   &:hover{
@@ -25,12 +25,12 @@
   }
   
   &--img {
-    width: 224px;
-    height: 72px;
+    min-width: 224px;
+    min-height: 72px;
 
     @media (min-width: $screen-lg) {
-      width: 240px;
-      height: 72px;
+      min-width: 240px;
+      min-height: 72px;
     }
   }
 }

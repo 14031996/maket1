@@ -2,7 +2,6 @@
 @use "global/normalize";
 @use "global/fonts";
 @use "global/variables" as *;
-@use "global/mixins" as *;
 @use "global/base";
 
 // Блоки
@@ -20,3 +19,9 @@
 @use "blocks/slider-brands";
 @use "blocks/slider-text";
 @use "blocks/swiper";
+@use "blocks/services";
+@use "blocks/services-text";
+@use "blocks/feedback-text-call";
+@use "blocks/feedback-text";
+@use "blocks/form-container";
+@use "blocks/footer";

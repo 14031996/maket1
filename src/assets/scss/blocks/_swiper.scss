@@ -2,15 +2,15 @@
 
 .swiper {
   padding: 20px;
-  height: 90px;
+  min-height: 90px;
   margin: 0;
   width: 100%; 
   max-width: 1200px; 
   overflow: hidden;
 
   &-slide {
-    width: 240px;
-    height: 72px;
+    min-width: 240px;
+    min-height: 72px;
     overflow: hidden;
     border: 1px solid $color-transparent;
 
@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 0;
+    height: auto;
 
     &-bullet {
       background-color: $color-pg;
@@ -36,7 +36,6 @@
       }
     }
   }
-
   @media (min-width: $screen-md) {
     display: none;
   }

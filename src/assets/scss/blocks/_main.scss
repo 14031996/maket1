@@ -58,19 +58,22 @@
   letter-spacing: 0.2px;
   margin: 0 15px;
   
-  &-content{
+
+  &-content {
     height: 100px;
     overflow: hidden;
 
     @media(min-width: $screen-md) {
       height: 140px;
-      overflow: hidden;
     }
 
     @media (min-width: $screen-lg){
       height: 160px;
-      overflow: hidden;
-      padding-left: 5px;
+    }
+
+    &--expanded {
+      height: auto;
+      overflow: visible;
     }
   }
   

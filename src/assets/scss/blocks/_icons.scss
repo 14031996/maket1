@@ -52,6 +52,14 @@
     background-image: url("/public/images/chat.svg"); 
   }
 }
-
+.button-close{
+  background-image: url("/public/images/close.svg"); 
+  
+  @media (min-width: $screen-lg) {
+    position: absolute;
+    left: 1130px;
+    top: 70px;
+  }
+}
 
  

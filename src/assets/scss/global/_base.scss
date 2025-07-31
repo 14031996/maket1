@@ -23,3 +23,46 @@ ul {
     cursor: pointer;
     padding: 10px 20px
 }
+
+.button-order {
+  background-image: url("/public/images/order.svg"); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 119px;
+  height: 32px;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: $color-transparent;
+  cursor: pointer;
+}
+
+.button-send{
+  background-image: url("/public/images/send.svg"); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 136px;
+  height: 32px;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: $color-transparent;
+  cursor: pointer;
+}
+
+input, textarea {
+  width: 288px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid $color-border;
+  font-size: 14px;
+}
+        
+textarea {
+  height: 100px;
+  padding-top: 28px;
+  padding-left: 8px;
+}
+

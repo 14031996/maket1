@@ -1,0 +1,35 @@
+@use "../global/variables" as *;
+@use "../global/base" as *;
+
+.services-text{
+    padding: 20px;;
+    
+    &__content{
+        font-family: $ff-regular;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        margin: 0;
+        padding: 10px;
+
+        @media (min-width: $screen-md) {
+            width: 421px;
+            height: 60px;
+        }
+    }
+    
+    &__more{
+        font-family: $ff-medium;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        padding: 20px 0;
+        
+        &:after {
+            content: url("/public/images/Line.svg");
+            display: inline-block;
+            padding-left: 10px;
+            vertical-align: middle;
+        }
+    }
+}
