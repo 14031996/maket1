@@ -159,7 +159,7 @@ ul {
   margin: 0;
   flex-direction: column;
   min-height: 100vh;
-  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   left: 0;
@@ -167,7 +167,6 @@ ul {
   background: white;
   z-index: 1000;
   transform: translateX(-100%);
-  transition: transform 0.3s ease;
   overflow-y: scroll;
   scrollbar-width: none;
 }
@@ -220,17 +219,15 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
   z-index: 999;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+
 }
 .aside-overlay.active {
   opacity: 1;
   visibility: visible;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .aside-header {
